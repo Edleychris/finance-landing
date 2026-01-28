@@ -2,6 +2,7 @@
 import Benefit from '~/components/review/Benefit.vue';
 import Financial from '~/components/review/Financial.vue';
 import Service from '~/components/sections/Service.vue';
+import WhyChoose from '~/components/sections/WhyChoose.vue';
 defineProps<{
   bg?: string
 }>()
@@ -18,6 +19,9 @@ defineProps<{
 
   <SectionWrapper bg="bg-[#FFFFFF]">
     <Financial />
+  </SectionWrapper>
+  <SectionWrapper bg="bg-[#FFFFFF]">
+    <WhyChoose />
   </SectionWrapper>
 
   <!-- <SectionWrapper bg="bg-[#FFFFFF]">
