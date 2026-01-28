@@ -26,7 +26,7 @@
         </div>
         <div class="flex flex-col justify-center space-y-6 flex-1">
           <p 
-            class="text-gray-700 text-lg leading-relaxed transition-opacity duration-500"
+            class="text-gray-700 sm:text-lg text-base leading-relaxed transition-opacity duration-500"
             :class="{ 'opacity-0': isTransitioning, 'opacity-100': !isTransitioning }"
           >
             {{ currentContent.testimonial }}
@@ -36,22 +36,22 @@
             class="transition-opacity duration-500"
             :class="{ 'opacity-0': isTransitioning, 'opacity-100': !isTransitioning }"
           >
-            <h3 class="text-2xl font-bold text-gray-900">{{ currentContent.name }}</h3>
-            <p class="text-gray-900 font-medium">{{ currentContent.role }}</p>
+            <h3 class="sm:text-2xl text-xl font-bold text-gray-900">{{ currentContent.name }}</h3>
+            <p class="text-gray-900 font-medium text-sm sm:text-base">{{ currentContent.role }}</p>
           </div>
         </div>
         </div>
       </div>
 
       <!-- Partner logos -->
-      <div class="border-t-2 border-gray-200 px-16 py-6 relative">
+      <div class="border-t-2 border-gray-200 sm:px-16 px-6 py-6 relative">
         <div class="absolute left-0 -top-px w-full h-[2.5px] overflow-hidden">
           <div 
             class="absolute h-full w-20 bg-gradient-to-r from-emerald-600 to-teal-700 animate-slide-horizontal"
           ></div>
         </div>
         
-        <div class="flex items-center justify-between opacity-40 grayscale">
+        <div class="flex items-center gap-2 justify-between opacity-40 grayscale">
             <span>
                 <img style="display: block;-webkit-user-select: none;margin: auto;background-color: transparent;transition: background-color 300ms;" src="data:image/png;base64,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">
             </span>
